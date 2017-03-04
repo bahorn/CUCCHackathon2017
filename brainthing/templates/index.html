@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/static/style.css">
+		
+		<title>Brain thing</title>
+	</head>
+	<body>
+		<div id="main">
+			<div id="header">
+				<h1>brainthing</h1>
+			</div>
+			<br />
+			<p>
+				This site presents data recorded from a Muse headband, which
+				was passed though a basic classifer.
+			</p>
+			
+			The machine is currently reporting that I am: {{ information.status }}.
+			
+			<h3>Data</h3>
+			<table>
+				<tr>
+					<th>Status</th>
+					<th>Left</th>
+					<th>Center left</th>
+					<th>Center right</th>
+					<th>Right</th>
+				</tr>
+				{% for i in data %}
+				<tr>
+					<td>{{ i.status }}</td>
+					<td>{{ i.left}} +/- {{ i.left_sd }}</td>
+					<td>{{ i.centerleft }} +/- {{ i.centerleft_sd }}</td>
+					<td>{{ i.centerright }} +/- {{ i.centerright_sd }}</td>
+					<td>{{ i.right }} +/- {{ i.right_sd }}</td>
+				</tr>
+				{% endfor %}
+			</table>
+			<div id="tail">
+				B Horn 2017.
+			</div>
+		</div>
+	</body>
+</html>

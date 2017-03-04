@@ -1,0 +1,73 @@
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    max-width: 800px;
+    width: 95%;
+    font-size: 18px;
+    margin-right: auto;
+    margin-left: auto;
+    background: #222;
+    color: white;
+}
+table{
+	margin-left: auto;
+	margin-right: auto;
+    width: 100%;
+}
+tr{
+	font-size: 20px;
+	border-radius: 5px;
+	background-color: #222;
+}
+th{
+	font-size: 20px;
+	padding: 10px;
+}
+td{
+	font-size: 15px;
+	padding: 10px;
+}
+#main{
+    background-color: #111;
+    padding: 2px 25px 25px 25px;
+    border-radius: 5px;
+}
+a{
+    color: #EA3C53;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* 
+ * tbh, these really should be classes instead of ids.
+ * I guess I'll fix that in the future when I turn this into some
+ * leet CSS framework or something. it'll be smaller than all the
+ * other lame frameworks ;)
+ */
+#container{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-width: 300px;
+    -moz-column-width: 300px;
+    column-width: 300px;
+}
+#contact{
+    display: inline-block;
+    width: 100%;
+}
+#content{
+    display: inline-block;
+    width: 100%;
+}
+#video{
+
+}
+.hidden{
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px; width: 1px;
+	margin: -1px; padding: 0; border: 0;
+}
+.visable{
+	visibility: visible;
+}
